@@ -57,6 +57,8 @@ Linux内核（5.4.43版本）
 
 #### 我们先关注修改较少的 blk_mq_make_request 以及 blk_mq_init_hctx.
 
+<details><summary> details for code changed </summary>
+	
 blk_mq_make_request中，在调用blk_mq_get_request获取request之前，添加了
 ```
 static blk_qc_t blk_mq_make_request(struct request_queue *q, struct bio *bio)
@@ -507,6 +509,8 @@ req_steering:
 	return rq;
 }
 ```
+</details>
+
 >论文结果复现
 ## Reproduct procedure description
 
