@@ -543,14 +543,14 @@ req_steering:
 
 目前已经能够成功运行
 1.`./toy_example_blk-switch.sh`
-![error](lapp.png)
-![error](tapp.png)
+![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/lapp.png)
+![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/tapp.png)
 
 2.`Figure 2 (Single-core Linux): Increasing L-app load (5 mins):`
-![error](fig2.png)
+![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/fig2.png)
 
 3.`Figure 3a (Single-core Linux): Increasing T-app I/O size (5 mins):`
-![error](fig3.png)
+![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/fig3.png)
 
 
 - 1.Current problems we're facing 
@@ -559,14 +559,14 @@ req_steering:
 `Figure 7: Increasing L-app load (6 mins)`
 以及后续测试时，出现如下问题：
 
-![error](error_msg.png)
+![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/error_msg.png)
 
 - 2.Possible causes of these problems
 
 由于2，3脚本可以正常运行，我们认为算法可以在单核的情况下顺利运行并测试。
 
 查阅报错信息，小组发现程序在调用编号为8的cpu时找不到该编号的cpu，而本机的cpu编号只为0-5，所以无法次步无法顺利执行。
-![error](error_msg2.png)
+![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/error_msg2.png)
 
 #### 3.Attempted solutions
 
