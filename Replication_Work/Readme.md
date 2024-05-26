@@ -15,7 +15,8 @@ Here stored the temp results during the replication work.Main procedure of how w
 当前阶段
 
 
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/error_msg2.png)
+![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/Replication_Work
+/error_msg2.png)
 
 ### B.过程
 
@@ -45,14 +46,14 @@ Here stored the temp results during the replication work.Main procedure of how w
 
 参考运行结果：
 1.`./toy_example_blk-switch.sh`
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/lapp.png)
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/tapp.png)
+![error](./lapp.png)
+![error](./tapp.png)
 
 2.`Figure 2 (Single-core Linux): Increasing L-app load (5 mins):`
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/fig2.png)
+![error](./fig2.png)
 
 3.`Figure 3a (Single-core Linux): Increasing T-app I/O size (5 mins):`
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/fig3.png)
+![error](./fig3.png)
 
 可以看到，在本地的测试中，可以完成基本的L-app以及T-app测试，与论文结果基本一致。
 
@@ -64,7 +65,7 @@ Here stored the temp results during the replication work.Main procedure of how w
 
 以及后续测试时，出现如下问题：
 
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/error_msg.png)
+![error](./error_msg.png)
 
 - 2.可能的问题成因
 
@@ -73,7 +74,7 @@ Here stored the temp results during the replication work.Main procedure of how w
 查阅报错信息，小组发现程序在调用编号为8的cpu时找不到该编号的cpu，而本机的cpu编号只为0-5，所以无法次步无法顺利执行。
 
 
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/error_msg2.png)
+![error](./error_msg2.png)
 
 #### 3.已尝试过的方法：
 
