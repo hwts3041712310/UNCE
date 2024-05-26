@@ -27,7 +27,47 @@
 
 ### 仓库结构
 ```
+.
+├── README.md
+├── Related_Paper_Analysis
+│   └── Readme.md
+├── blk_switch_analysis
+│   └── README.md
+├── block_layer_analysis
+│   ├── README.md
+│   ├── blk-mq
+│   │   ├── README.md
+│   │   ├── assets
+│   │   │   ├── mq_get.png
+│   │   │   ├── mq_init.png
+│   │   │   ├── mq_make.png
+│   │   │   ├── mq_make_insert.png
+│   │   │   ├── mq_run_hw_q.png
+│   │   │   └── mq_run_hw_q_p2.png
+│   │   ├── blk_mqh.md
+│   │   └── mq_call_stack.c
+│   ├── block_layer
+│   │   ├── README.md
+│   │   ├── assets
+│   │   │   ├── bio.png
+│   │   │   └── block_position.png
+│   │   └── block_layer_call_stack.c
+│   └── nvme_driver
+│       ├── README.md
+│       └── aassets
+│           ├── nvme_commands.png
+│           └── nvmequeue.gif
+├── result
+│   ├── Readme.md
+│   ├── error_msg.png
+│   ├── error_msg2.png
+│   ├── fig2.png
+│   ├── fig3.png
+│   ├── lapp.png
+│   └── tapp.png
+└── school_logo.png
 
+10 directories, 28 files
 ```
 
 ## 第一阶段
