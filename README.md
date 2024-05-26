@@ -52,7 +52,7 @@ Linux内核（5.4.43版本）
 │   │   ├── mq_make_insert.png
 │   │   ├── mq_run_hw_q.png
 │   │   └── mq_run_hw_q_p2.png
-│   ├── blk_mqh.md
+│   ├── blk_mqh.md                //多队列相关头文件的分析
 │   └── mq_call_stack.c         //具体代码流程解读
 ├── block_layer
 │   ├── README.md               //解读文档
