@@ -27,47 +27,7 @@
 
 ### 仓库结构
 ```
-.
-├── README.md
-├── Related_Paper_Analysis
-│   └── Readme.md
-├── blk_switch_analysis
-│   └── README.md
-├── block_layer_analysis
-│   ├── README.md
-│   ├── blk-mq
-│   │   ├── README.md
-│   │   ├── assets
-│   │   │   ├── mq_get.png
-│   │   │   ├── mq_init.png
-│   │   │   ├── mq_make.png
-│   │   │   ├── mq_make_insert.png
-│   │   │   ├── mq_run_hw_q.png
-│   │   │   └── mq_run_hw_q_p2.png
-│   │   ├── blk_mqh.md
-│   │   └── mq_call_stack.c
-│   ├── block_layer
-│   │   ├── README.md
-│   │   ├── assets
-│   │   │   ├── bio.png
-│   │   │   └── block_position.png
-│   │   └── block_layer_call_stack.c
-│   └── nvme_driver
-│       ├── README.md
-│       └── aassets
-│           ├── nvme_commands.png
-│           └── nvmequeue.gif
-├── result
-│   ├── Readme.md
-│   ├── error_msg.png
-│   ├── error_msg2.png
-│   ├── fig2.png
-│   ├── fig3.png
-│   ├── lapp.png
-│   └── tapp.png
-└── school_logo.png
 
-10 directories, 28 files
 ```
 
 ## 第一阶段
@@ -146,14 +106,14 @@ Linux内核（5.4.43版本）
 
 参考运行结果：
 1.`./toy_example_blk-switch.sh`
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/lapp.png)
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/tapp.png)
+![error](./Replication_Work/lapp.png)
+![error](./Replication_Work/tapp.png)
 
 2.`Figure 2 (Single-core Linux): Increasing L-app load (5 mins):`
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/fig2.png)
+![error](./Replication_Work/fig2.png)
 
 3.`Figure 3a (Single-core Linux): Increasing T-app I/O size (5 mins):`
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/fig3.png)
+![error](./Replication_Work/fig3.png)
 
 可以看到，在本地的测试中，可以完成基本的L-app以及T-app测试，与论文结果基本一致。
 
@@ -165,7 +125,7 @@ Linux内核（5.4.43版本）
 
 以及后续测试时，出现如下问题：
 
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/error_msg.png)
+![error](./Replication_Work/error_msg.png)
 
 - 2.可能的问题成因
 
@@ -174,7 +134,7 @@ Linux内核（5.4.43版本）
 查阅报错信息，小组发现程序在调用编号为8的cpu时找不到该编号的cpu，而本机的cpu编号只为0-5，所以无法次步无法顺利执行。
 
 
-![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/error_msg2.png)
+![error](./Replication_Work/error_msg2.png)
 
 #### 3.已尝试过的方法：
 
