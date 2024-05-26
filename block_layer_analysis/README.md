@@ -29,6 +29,8 @@
 
 相应的数据结构分析以及流程分析（[blk-mq](./blk-mq/README.md)）。
 
+Supportive:对应代码文件中blk_mq.h定义的相关函数及其作用位于([blk_mqh](./blk-mq/blk_mqh.md))
+
 ## block-layer
 
 块层总体框架分析（[block-layer](./block_layer/README.md)）。
