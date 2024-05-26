@@ -132,6 +132,8 @@ Linux内核（5.4.43版本）
 由于1.部分的脚本可以正常运行，我们认为算法可以在单核的情况下顺利运行并测试。
 
 查阅报错信息，小组发现程序在调用编号为8的cpu时找不到该编号的cpu，而本机的cpu编号只为0-5，所以无法次步无法顺利执行。
+
+
 ![error](https://github.com/hwts3041712310/proj279-nvme-ssd-block-storage/blob/main/result/error_msg2.png)
 
 #### 3.已尝试过的方法：
