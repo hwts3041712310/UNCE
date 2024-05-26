@@ -41,7 +41,46 @@ Linux内核（5.4.43版本）
 
 >Block Layer框架分析
 
+为了找出并优化改进块层中对实时性影响较大的因素，我们分析了`Linux5.4x`系统中IO子模块的代码。其中包括：对Linux块层（block layer）流程框架的分析、对Linux多队列块层实现（multi-queue）流程的分析以及对NVMe设备的特点以及相应的驱动程序的分析。
+```
+├── blk-mq
+│   ├── README.md               //解读文档
+│   ├── assets                  //图片文件
+│   │   ├── mq_get.png
+│   │   ├── mq_init.png
+│   │   ├── mq_make.png
+│   │   ├── mq_make_insert.png
+│   │   ├── mq_run_hw_q.png
+│   │   └── mq_run_hw_q_p2.png
+│   ├── blk_mqh.md
+│   └── mq_call_stack.c         //具体代码流程解读
+├── block_layer
+│   ├── README.md               //解读文档
+│   ├── assets                  //图片文件
+│   │   ├── bio.png
+│   │   └── block_position.png
+│   └── block_layer_call_stack.c    //具体代码流程解读
+└── nvme_driver
+    ├── README.md               //解读文档
+    └── aassets                 //图片文件
+        ├── nvme_commands.png
+        └── nvmequeue.gif
+```
 
+根据赛题，小组对Linux中block层的整体框架、核心文件blk-mq以及NVMe协议做了大量的分析，生成了阶段性的报告：
+##### blk-mq
+
+相应的数据结构分析以及流程分析。针对现代linux应用的多队列块层框架，blk-mq*文件是block层的核心，调度也在此进行。（[blk-mq](./blk-mq/README.md)）。
+
+Supportive:对应代码文件中blk_mq.h定义的相关函数及其作用位于([blk_mqh](./blk-mq/blk_mqh.md))
+
+##### block-layer
+
+块层总体框架分析。对于IO调度栈的优化，首先需要知道请求从文件系统发放，再到下层硬件执行的流程，对block层的整体框架进行分析是优化的前提。（[block-layer](./block_layer/README.md)）。
+
+##### nvme_driver
+
+NVMe设备与驱动分析。这是关于block层与硬件的接口，针对NVMe协议进行的分析。（[nvme](./nvme_driver/README.md)）。
 
 
 >blk-switch解读
